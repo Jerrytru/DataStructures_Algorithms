@@ -7,7 +7,7 @@ package arrays;
 
 /**
  *
- * @author yudithtrujillo
+ * @author jerrytrujillo
  */
 public class RecursiveBinSearch {
     
