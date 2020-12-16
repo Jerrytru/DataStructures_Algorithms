@@ -15,6 +15,7 @@ public class main {
         
           System.out.println(RecursiveBinSearch.recursiveBinarySearch(arr, 50, 0, 9));
           System.out.println(IterativeBinarySearch.iterativeBinSearch(arr, 90));
+          System.out.println(FindMaximumInSlidingWindow.findMaxSlidingWindow(arr, 4));
 } 
     
 }
