@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package arrays;
+import java.util.List;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,13 +17,23 @@ public class main {
         int[] arr1 = {1,2,3,4,5};
         int[] arr2 = {4,5,6,7,8};
         int[] arr3 = {2,3,4,5,6};
+        List<Integer> list = new ArrayList<Integer>();
         
-        
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(5);
+        list.add(5);
+        list.add(6);
         
           System.out.println(RecursiveBinSearch.recursiveBinarySearch(arr, 50, 0, 9));
           System.out.println(IterativeBinarySearch.iterativeBinSearch(arr, 90));
           System.out.println(FindMaximumInSlidingWindow.findMaxSlidingWindow(arr, 4));
           System.out.println(FindSmallestCommonNumber.findSmallestCommonNumber(arr1, arr2, arr3));
+          System.out.println(FindLowHighIndex.findHighIndex(list,5));
+          System.out.println(FindLowHighIndex.findLowIndex(list,5));
 } 
     
 }

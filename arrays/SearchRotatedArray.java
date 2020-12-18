@@ -22,7 +22,7 @@ public class SearchRotatedArray {
            start = mid + 1;
        } else if ( arr[start] >= arr[mid]){
            end = mid-1;
-       } else if (arr[end] <= arr[mid] ){
+       } else if (arr[end] <= arr[mid]){
            start = mid + 1;
        }
     }
