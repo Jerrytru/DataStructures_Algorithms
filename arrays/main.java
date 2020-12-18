@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package arrays;
+import LinkedLists.LinkedList;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,5 +43,20 @@ public class main {
             int [] result = StockBuySellMaxProfit.stockMaxProfit(arr);
           
             System.out.println(Arrays.toString(result));
+            
+            
+       LinkedList list1 = new LinkedList();
+       list1.append(2);
+       list1.append(2);
+       list1.append(2);
+       list1.append(2);
+       list1.append(2);
+       list1.append(7);
+       list1.deleteWithValue(2);
+       
+       System.out.println(list1);
+       
+       System.out.println(list1.getSize(list1));
+       
     }
 }
