@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package arrays;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 
-/**
- *
- * @author yudithtrujillo
- */
 public class FindMaximumInSlidingWindow {
     
     
@@ -19,9 +10,9 @@ public class FindMaximumInSlidingWindow {
          ArrayDeque<Integer> result = new ArrayDeque<Integer>();
          Deque<Integer> list = new LinkedList<Integer>();
     
-         if( arr.length > 0 ){
+         if( arr.length > 0 ){ 
              
-             if( arr.length < windowSize )
+             if( arr.length < windowSize )  
                  return result;
              
              for ( int i = 0; i < windowSize; ++i){
@@ -47,7 +38,7 @@ public class FindMaximumInSlidingWindow {
              
              result.add(arr[list.peek()]);
              return result;
-     
+             
          } else {
               return result;
          }

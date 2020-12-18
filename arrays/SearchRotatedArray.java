@@ -16,7 +16,7 @@ public class SearchRotatedArray {
     while( start <= end ){
        int mid = start + ((end - start) / 2);
        
-       if ( arr[start] <= arr[mid] && key <= arr[mid] && key >= arr[start] ){
+       if (arr[start] <= arr[mid] && key <= arr[mid] && key >= arr[start]){
            end = mid -1;
        } else if ( arr[end] >= arr[mid] && key >= arr[mid] && key <= arr[end]){
            start = mid + 1;
