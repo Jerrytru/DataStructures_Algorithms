@@ -5,6 +5,7 @@
  */
 package arrays;
 import LinkedLists.LinkedList;
+import LinkedLists.SearchLinkedList;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,21 +31,6 @@ public class main {
         list.add(5);
         list.add(6);
         
-//          System.out.println(RecursiveBinSearch.recursiveBinarySearch(arr, 50, 0, 9));
-//          System.out.println(IterativeBinarySearch.iterativeBinSearch(arr, 90));
-//          System.out.println(FindMaximumInSlidingWindow.findMaxSlidingWindow(arr, 4));
-//          System.out.println(FindSmallestCommonNumber.findSmallestCommonNumber(arr1, arr2, arr3));
-//          System.out.println(FindLowHighIndex.findHighIndex(list,5));
-//          System.out.println(FindLowHighIndex.findLowIndex(list,5));
-//          MoveAllZeroesToBeginning.moveZeroesToBeginning(arr);
-            MoveAllZeroesToBeginning.moveZeroesToBeginning(arr);
-            System.out.println(Arrays.toString(arr));
-           
-            int [] result = StockBuySellMaxProfit.stockMaxProfit(arr);
-          
-            System.out.println(Arrays.toString(result));
-            
-            
        LinkedList list1 = new LinkedList();
        list1.append(2);
        list1.append(2);
@@ -53,10 +39,9 @@ public class main {
        list1.append(2);
        list1.append(7);
        list1.deleteWithValue(2);
-       
-       System.out.println(list1);
-       
+        
        System.out.println(list1.getSize(list1));
+       System.out.println(SearchLinkedList.searchNode(list1,5));
        
     }
 }

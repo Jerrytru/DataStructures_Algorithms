@@ -4,6 +4,7 @@ public class LinkedList {
     
    public static Node head;
    
+   
    public static void append(int data){
        if( head == null){
            head = new Node(data);
