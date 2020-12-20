@@ -8,6 +8,7 @@ import LinkedLists.LinkedList;
 import LinkedLists.Node;
 import LinkedLists.SearchLinkedList;
 import LinkedLists.ReverseLinkedList;
+import LinkedLists.DetectLoop;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -49,6 +50,7 @@ public class main {
        list1.display();
        ReverseLinkedList.reverseLinkedList(list1);
        list1.display();
+       System.out.println(DetectLoop.detectLoop(list1));
        
     }
 }
