@@ -9,6 +9,7 @@ import LinkedLists.Node;
 import LinkedLists.SearchLinkedList;
 import LinkedLists.ReverseLinkedList;
 import LinkedLists.DetectLoop;
+import LinkedLists.MiddleNode;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,12 +36,12 @@ public class main {
         list.add(6);
         
        LinkedList list1 = new LinkedList();
+       list1.append(1);
        list1.append(2);
-       list1.append(2);
-       list1.append(2);
-       list1.append(2);
-       list1.append(2);
-       list1.append(7);
+       list1.append(3);
+       list1.append(4);
+       list1.append(5);
+       list1.append(6);
        list1.deleteWithValue(2);
         
        System.out.println(list1.getSize(list1));
@@ -51,6 +52,8 @@ public class main {
        ReverseLinkedList.reverseLinkedList(list1);
        list1.display();
        System.out.println(DetectLoop.detectLoop(list1));
+       System.out.println(LinkedLists.MiddleNode.midNode(list1));
+       
        
     }
 }
