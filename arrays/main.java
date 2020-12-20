@@ -5,6 +5,7 @@
  */
 package arrays;
 import LinkedLists.LinkedList;
+import LinkedLists.Node;
 import LinkedLists.SearchLinkedList;
 import java.util.List;
 import java.util.ArrayList;
@@ -42,6 +43,8 @@ public class main {
         
        System.out.println(list1.getSize(list1));
        System.out.println(SearchLinkedList.searchNode(list1,5));
+       Node head = list1.head; 
+       System.out.println(head);
        
     }
 }
