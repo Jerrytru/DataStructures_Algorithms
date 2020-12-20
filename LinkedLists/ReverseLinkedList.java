@@ -1,7 +1,7 @@
 package LinkedLists;
 
 public class ReverseLinkedList {
-    public static Node reverseLinkedList(LinkedList list){
+    public static LinkedList reverseLinkedList(LinkedList list){
         Node prev = null;
         Node next = null;
         Node current = list.head;
@@ -13,7 +13,7 @@ public class ReverseLinkedList {
             current = next;
         }
         
-        return list.head;
-        
+         list.head = prev;
+        return list;
     }
 }
