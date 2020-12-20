@@ -44,7 +44,9 @@ public class main {
        System.out.println(list1.getSize(list1));
        System.out.println(SearchLinkedList.searchNode(list1,5));
        Node head = list1.head; 
-       System.out.println(head);
+       list1.display();
+       
+       
        
     }
 }

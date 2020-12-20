@@ -58,5 +58,18 @@ public class LinkedList {
        }
        return count;
    }
+   
+   public static void display(){
+       Node current = head; 
+       String result = " ";
+       
+       while( current != null){
+           result += current.data + " -> "; 
+           current = current.next; 
+       }
+       result += " null ";
+       
+       System.out.println(result);
+   }
     
 }
