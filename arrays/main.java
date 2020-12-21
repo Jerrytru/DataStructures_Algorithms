@@ -1,23 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package arrays;
+
 import LinkedLists.LinkedList;
 import LinkedLists.Node;
 import LinkedLists.SearchLinkedList;
 import LinkedLists.ReverseLinkedList;
 import LinkedLists.DetectLoop;
+import LinkedLists.RemoveDuplicates;
 import LinkedLists.MiddleNode;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- *
- * @author jerrytrujillo
- */
+
 public class main {
     public static void main (String[] args){
         int[] arr = {10,20,30,40,50,60,70,80,90,10,0,0,0,0,0,0,0,0};
@@ -40,7 +34,7 @@ public class main {
        list1.append(2);
        list1.append(3);
        list1.append(4);
-       list1.append(5);
+       list1.append(6);
        list1.append(6);
        list1.deleteWithValue(2);
         
@@ -54,6 +48,7 @@ public class main {
        System.out.println(DetectLoop.detectLoop(list1));
        System.out.println(LinkedLists.MiddleNode.midNode(list1));
        
-       
+       LinkedLists.RemoveDuplicates.removeDuplicates(list1);
+       list1.display();
     }
 }
