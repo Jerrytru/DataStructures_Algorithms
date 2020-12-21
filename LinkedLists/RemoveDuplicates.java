@@ -18,5 +18,4 @@ public class RemoveDuplicates {
             current = current.next;
         }
     }
-    
 }
